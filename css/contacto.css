@@ -193,15 +193,10 @@
 
 @media screen and (max-width: 768px) {
     .contacto-container {
-        background-color: #C1E6DC;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: fit-content;
-        padding: 20px 40px;
-        margin: 20px auto;
-        border-radius: 5px;
+        background-color: transparent;
+        width: 100%;
+        padding:0;
+        margin: 10px auto;
     }
 
     .contacto__imagen {
