@@ -85,7 +85,7 @@ function validarFormulario(){
 
     // $('form').submit();
     if (errors==0) {
-        mostrarAlertaSuccess('button', 'El mensaje se enviado exitosamente. Muy pronto me pondré en contacto contigo'); 
+        mostrarAlertaSuccess('button', 'El mensaje se enviado exitosamente'); 
         setTimeout(function(){ 
             $('.alert-success').remove(); 
 
