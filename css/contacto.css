@@ -202,5 +202,9 @@
     .contacto__imagen {
         display: none;
     }
+
+	.formulario {
+		margin: 20px;
+	}
     
 }
