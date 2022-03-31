@@ -13,6 +13,7 @@
 
 .footer__texto {
     font-weight: 700;
+    text-align: center;
 }
 
 .footer__lista {
@@ -34,4 +35,12 @@
     color: white;
     font-size: 33px;
     transition: all 0.5s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+    .footer__texto {
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+    }
 }
