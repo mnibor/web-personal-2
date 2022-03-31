@@ -1,0 +1,132 @@
+.about {
+    grid-area: about;
+    background-color: #C1E6DC;
+}
+
+.about__textos {
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+	align-items: center;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 40px;
+}
+
+.about__imagen {
+    flex: 1 1 auto;
+}
+
+
+.about__extracto {
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #033F62;
+    flex: 1 1 auto;
+}
+
+
+.about__img {
+	width: 500px; 
+	height: auto;
+}
+
+/* SECCION REDES SOCIALES */
+
+.about__redes {
+	flex: 1 1 100%;
+	justify-content: end;
+    margin-top: 30px;
+}
+
+.about__redes-lista {
+	text-decoration: none;
+	display: flex;
+	list-style: none;
+	justify-content: end;
+}
+
+.about__icono {
+    color: #033F62;
+	font-size: 30px;
+	padding: 5px 12px;
+	display: block;
+	background-color: transparent;
+	border-radius: 4px;
+	margin: 0 7px;
+}
+
+.about__icono:hover {
+    color: #C1E6DC;
+	transition: 0.4s;
+	transform: translateY(-3px) scale(1.05);
+}
+
+.github:hover {
+	filter: none;
+    color: var(--github);
+}
+
+.twitter:hover {
+	filter: none;
+	color: var(--twitter);
+}
+
+.instagram:hover {
+	filter: none;
+	color: var(--instagram);
+}
+
+.pdf:hover {
+	filter: none;
+	color: var(--pdf);
+}
+
+.linkedin:hover {
+	filter: none;
+	color: var(--linkedin);
+}
+
+:root {
+	--twitter: #1DA1F2;
+	--linkedin: #0073b1;
+	--github: #171515;
+	--instagram: #FD1D1D;
+	--pdf: #F40F02;
+}
+
+@media screen and (max-width: 768px) {
+    .about__imagen {
+        display: none;
+    }
+
+    .about__textos {
+        text-align: center;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about__extracto {
+        font-size: 1.3rem;
+    }
+
+    .about__redes-lista {
+        flex: 1 1 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__container {
+        margin: 0;
+    }
+}
+
+
+

@@ -1,0 +1,39 @@
+.footer {
+    grid-area: footer;
+    background-color: #054A91;
+    color: #C1E6DC;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px
+}
+
+.footer__texto {
+    font-weight: 700;
+}
+
+.footer__lista {
+	text-decoration: none;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+    padding-top: 10px;
+}
+
+.footer__icono {
+	color: #C1E6DC;
+	font-size: 30px;
+	padding: 0 10px;
+	display: block;
+}
+
+.footer__icono:hover {
+    color: white;
+    font-size: 33px;
+    transition: all 0.5s ease-out;
+}

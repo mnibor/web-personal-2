@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: white;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.1rem;
+	min-height: 100%;
+}
+
+.titulo__seccion {
+    font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.5rem;
+	background-color: #323c41;
+	color: #C1E6DC;
+	text-align: center;
+	font-weight: lighter;
+	padding: 10px 0;
+	border-top: 2px solid rgba(255,255,266,0.6);
+	border-bottom: 2px solid rgba(255,255,266,0.6);
+}
+
+.isDisabled {
+	color: currentColor;
+	cursor: not-allowed;
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:    "header header"
+                            "about about"
+                            "conocimientos conocimientos"
+                            "portafolio portafolio"
+                            "hobbies hobbies"
+                            "contacto contacto"
+                            "footer footer";
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas:    "header"
+                                "about"
+                                "conocimientos"
+                                "portafolio"
+                                "hobbies"
+                                "contacto"
+                                "footer";
+    }
+}
