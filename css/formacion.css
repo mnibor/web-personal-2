@@ -18,21 +18,14 @@
 
 .card__formacion {
     background: #C1E6DC;
-
     width: 600px;
-	
     display: flex;
 	flex-flow: row nowrap;
 	height: 250px;
-
     border-radius: 5px;
-
-
     margin-top: 30px;
     margin-bottom: 30px;
-
     padding-right: 10px;
-    
     max-height: 200px;
     max-width: 100%;
 }
@@ -69,12 +62,10 @@
     .card-container {
         margin: 0 30px;
     }
-
 }
 
 @media screen and (max-width: 768px) {
     .card-container {
         margin: 0 30px;
     }
-
 }

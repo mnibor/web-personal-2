@@ -8,7 +8,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     margin: 40px auto;
 }
 
@@ -19,7 +18,6 @@
     width: 300px;
     height: auto;
     border-radius: 5px;
-    /* margin-top: 30px; */
     margin-bottom: 30px;
     padding-right: 10px;
     max-width: 100%;
@@ -40,17 +38,10 @@
     padding: 0 20px;
 }
 
-.portafolio__textos {os
-    /* margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px; */
-}
-
 .portafolio__titulo {
     font-size: 20px;
     color: #C1292E;
     text-align: center;
-
 }
 
 .portafolio__subtitulo {
@@ -83,14 +74,6 @@
 	justify-content: center;
 }
 
-
-
-
-
-
-
-
-
 .portafolio__icono {
     color: #033F62;
 	font-size: 20px;
@@ -101,40 +84,8 @@
 }
 
 .portafolio__icono:hover {
-    color: #C1E6DC;
+    color: #581845;
 	transition: 0.4s;
 	transform: translateY(-3px) scale(1.05);
 }
 
-.github:hover {
-	filter: none;
-    color: var(--github);
-}
-
-.twitter:hover {
-	filter: none;
-	color: var(--twitter);
-}
-
-.instagram:hover {
-	filter: none;
-	color: var(--instagram);
-}
-
-.pdf:hover {
-	filter: none;
-	color: var(--pdf);
-}
-
-.linkedin:hover {
-	filter: none;
-	color: var(--linkedin);
-}
-
-:root {
-	--twitter: #1DA1F2;
-	--linkedin: #0073b1;
-	--github: #171515;
-	--instagram: #FD1D1D;
-	--pdf: #F40F02;
-}

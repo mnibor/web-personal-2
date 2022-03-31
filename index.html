@@ -24,11 +24,10 @@
 </head>
 <body>
     <div class="container">
-
 		<header class="header">
 			<div class="header__menu">
                 <div class="header__logo">
-                    <a class="header__logo-link" href="index.html">{MR} Diseño<span style="color: blue;">WEB</span></a>
+                    <a class="header__logo-link" href="index.html"><img class="header__logo-img" src="images/logo.png" alt=""></a>
                 </div>
 
                 <div class="header__nav">
@@ -43,20 +42,24 @@
                 </div>
             </div>
 
-			<div class="header__presentacion">
-                <div class="header__presentacion-thumbnail">
-                    <!-- <img class="presentacion__imagen" src="img/sobre-mi/perfil.jpg" alt=""> -->
-                </div>
+			<div class="header__contenedor">
+				<div class="header__presentacion">
+					<div>
+						<img class="presentacion__imagen" src="images/sobre-mi/perfil-new.png" alt="foto-perfil">
+					</div>
+	
+					<div class="header__presentacion-textos">
+						<p class="presentacion__titulo">Me llamo Marcelo Robin</p>
+						<p class="presentacion__titulo presentacion__titulo--amarillo" id="typewriter"></p>
+						<p class="presentacion__extracto">
+							...un desafío apasionante que requiere<br>
+							dedicación, paciencia y pasión...
+						</p>
+					</div>
+				</div>
+			</div>
 
-                <div class="header__presentacion-textos">
-                    <!-- <h2 class="presentacion__titulo">Me llamo Marcelo Robin</h2>
-                    <h2 class="presentacion__titulo presentacion__titulo--amarillo" id="typewriter"></h2>
-                    <h3 class="presentacion__extracto">
-                        ...un desafío apasionante que requiere<br>
-                        dedicación, paciencia y pasión...
-                    </h3> -->
-                </div>
-            </div>
+			
 		</header>
 
         <!-- TERMINADO -->
@@ -102,7 +105,6 @@
 
         <!-- TERMINADO -->
 		<section class="conocimientos">
-
 			<section class="formacion" id="formacion">
 				<div class="titulo__seccion">
 					<p>FORMACION</p>
@@ -235,7 +237,6 @@
 
 				</div>
 			</section>
-
 		</section>
 
         <!-- TERMINADO -->
@@ -527,15 +528,15 @@
 					</div>
 
 					<div class="formulario__form">
+
 						<form action="" class="formulario" id="formulario">
 							<!-- Grupo: Nombre -->
 							<div class="formulario__grupo" id="grupo__nombre">
 								<label for="nombre" class="formulario__label">Nombre y Apellido</label>
 								<div class="formulario__grupo-input">
 									<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
-									<i class="formulario__validacion-estado fas fa-times-circle"></i>
 								</div>
-								<p class="formulario__input-error">Campo obligatorio, hasta 40 caracteres</p>
+								<p class="formulario__input-error"></p>
 							</div>
 
 							<!-- Grupo: Correo Electronico -->
@@ -543,17 +544,17 @@
 								<label for="correo" class="formulario__label">Correo Electrónico</label>
 								<div class="formulario__grupo-input">
 									<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-									<i class="formulario__validacion-estado fas fa-times-circle"></i>
+									
 								</div>
-								<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+								<p class="formulario__input-error"></p>
 							</div>
 
 							<!-- Grupo: Mensaje -->
 							<div class="formulario__grupo" id="grupo__mensaje">
 								<label for="mensaje" class="formulario__label">Mensaje</label>
 								<div class="formulario__grupo-textarea">
-									<textarea class="formulario__textarea" name="mensaje" id="mensaje" rows="8" placeholder="Escriba su mensaje aquí..."></textarea>
-									<i class="formulario__validacion-estado fas fa-times-circle"></i>
+									<textarea class="formulario__textarea" name="mensaje" id="mensaje" rows="5" placeholder="Escriba su mensaje aquí..."></textarea>
+									
 								</div>
 								<p class="formulario__input-error">El mensaje debe tener por lo menos 20 caracteres de longitud</p>
 							</div>
@@ -563,15 +564,11 @@
 							</div>
 
 							<div class="formulario__grupo formulario__grupo-btn-enviar">
-								<button type="submit" class="formulario__btn">Enviar</button>
+								<button type="button" onclick="validarFormulario()" class="formulario__btn" id="button">Enviar</button>
 								<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 							</div>
 						</form>
 					</div>
-
-
-
-
 				</div>
 
 
@@ -610,9 +607,10 @@
 		</footer>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	<script src="js/typed.js"></script>
+	<script src="js/app.js"></script>
 </body>
-
-
 </html>

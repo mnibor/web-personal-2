@@ -2,12 +2,10 @@
     grid-area: footer;
     background-color: #054A91;
     color: #C1E6DC;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px

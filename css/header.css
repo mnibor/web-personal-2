@@ -1,4 +1,142 @@
 .header {
     grid-area: header;
-    background-color: #81A4CD;
+    background-color: #054A91;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__menu {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    overflow: hidden;
+    min-height: 140px;
+    padding: 30px 0;
+}
+
+.header__logo-img {
+    border: 5px solid #C1E6DC;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.header__lista {
+    list-style-type: none;
+    padding-right: 20px;
+    display: flex;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #C1E6DC;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.header__link:hover {
+    color: #FFC300;
+    transition: 0.5s;
+}
+
+/* PRESENTACION */
+
+.header__contenedor {
+    background: url('../images/fondo.png');
+}
+
+.header__presentacion {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.presentacion__imagen {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.header__presentacion-textos {
+    padding: 0;
+    justify-content: start;
+}
+
+.presentacion__titulo {
+    font-size: 3rem;
+    color: #C1E6DC;
+}
+
+.presentacion__titulo--amarillo {
+    font-size: 2rem;
+    color: #FFC300;
+}
+
+.presentacion__extracto {
+    font-size: 1.8rem;
+    color: #C1E6DC;
+}
+
+@media screen and (max-width: 1000px) {
+    .header__menu {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .header__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .header__logo-img {
+        border: 5px solid #C1E6DC;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .header__presentacion {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .presentacion__imagen {
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .presentacion__titulo {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .presentacion__titulo--amarillo {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: normal;
+    }
+
+    .presentacion__extracto {
+        text-align: center;
+        font-size: 1.8rem;
+    }
 }
